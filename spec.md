@@ -128,7 +128,7 @@ flowchart TD
 - Trường hợp đặc thù lĩnh vực (lớp 4): Điểm nghỉ định kỳ theo thứ, nghỉ trưa hoặc người dùng đến sát giờ đóng cửa → Hệ thống báo ngay `[VƯỚNG GIỜ / NGÀY NGHỈ]` để người dùng tránh mất công di chuyển vô ích.
 
 ## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
-- Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 16 câu (thuong 7 · kho 6 · tu_choi 3, trong đó 2 câu tấn công) · metric: `eval/metric_spec.yaml` (4 metric)
+- Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 11 · kho 9 · tu_choi 4, trong đó 2 câu tấn công và 8 câu từ người dùng thật) · metric: `eval/metric_spec.yaml` (4 metric)
 - **Chuẩn "đạt"** (chốt **trước 19:30 Thứ Sáu 27/11**, giữ nguyên đến 23:59 Thứ Bảy 28/11): "Đạt khi ≥ 80% tổng số câu qua, và đồng thời: (a) 0 mục bị báo KHỚP sai; (b) 100% mục có nêu giờ, ngày nghỉ hoặc nhãn KHỚP / VƯỚNG đúng dữ liệu và có mã nguồn; (c) 100% câu tu_choi qua."
 - Cách tính: một câu **qua** khi output đúng `expected` và đạt `pass_criterion` của câu đó. Phải thoả cả mức 80% lẫn (a), (b), (c). Câu lỗi kỹ thuật tính là không qua. Metric `nhan_dung_ca_cau` (≥ 80% câu thuong + kho) báo cáo riêng.
 - Kết quả: lượt 1 __/__ (__%) · lượt 2 __/__ (__%) — run ID: __ / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`

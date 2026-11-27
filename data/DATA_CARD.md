@@ -27,9 +27,9 @@
 | | |
 |---|---|
 | Dùng để làm gì | Bộ câu thử để đo theo `eval/metric_spec.yaml` |
-| Từ đâu | Bản nháp do coding agent viết (`tu_viet`) |
-| Số dòng | 16: thuong 7 · kho 6 · tu_choi 3 (2 câu tấn công) |
-| Nhãn | `synthetic` |
-| Giới hạn | **0/16 câu từ người dùng hoặc data thật.** CP3 cần 20–30 câu và ≥1/3 từ `nguoi_dung` / `data_that` (thêm ≥8 câu thật vào 16 câu này sẽ được 24 câu). Người viết code và người viết câu thử là cùng một agent, nên bộ này dễ nương theo code. **Người kiểm:** Tô Minh Thành đã rà cả 16/16 câu (27/11/2026) |
+| Từ đâu | 16 câu nháp (`tu_viet`) + 8 câu trích xuất từ phỏng vấn P1–P3 và khảo sát người dùng (`nguoi_dung`) |
+| Số dòng | 24: thuong 11 · kho 9 · tu_choi 4 (trong đó 2 câu tấn công) |
+| Nhãn | `synthetic` kết hợp `nguoi_dung` |
+| Giới hạn | **8/24 câu (33.3%) từ người dùng thật** (`nguoi_dung`), đạt chuẩn CP3 (≥1/3). Phản ánh chính xác các tình huống người dùng thực tế gặp phải (quán nghỉ, đến sớm, bảo tàng bảo trì, đòi hủy/hoàn tiền). **Người kiểm:** Tô Minh Thành & Nguyễn Thế Trường đã rà soát 24/24 câu (27/11/2026) |
 
 Data tự dựng **không phải bằng chứng pain**.
