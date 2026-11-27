@@ -14,16 +14,16 @@
 ## 2. Số chính
 
 - Đào data: __/__ (__%) …
-- Phỏng vấn: **2/3 người kể được một lần cụ thể trong 12 tháng qua** tới nơi gặp điểm đóng cửa (P2, P3); P1 có gặp nhưng không rõ thời điểm và kể là ít ảnh hưởng *(n nhỏ không ghi %)* · số lần / 1 tháng qua: P1 0, P2 0, P3 0 (cả 3 không đi chuyến nào trong 1 tháng qua) · tần suất tự kể: P1 "hiếm hoi 1–2 lần", P2 "khoảng 1 lần nếu đi 5–7 điểm", P3 "khoảng 1 lần mỗi chuyến, thỉnh thoảng 2" · mỗi lần mất 30–40 phút (P2, P3) và 50.000–120.000đ tiền xe
+- Phỏng vấn: **2/3 người kể được một lần cụ thể trong 12 tháng qua** tới nơi gặp điểm đóng cửa (P2, P3); P1 có gặp nhưng không rõ thời điểm và kể là ít ảnh hưởng *(n nhỏ không ghi %)* · số lần / 12 tháng qua: P1 không rõ (tự kể "hiếm hoi 1–2 lần", không nói khi nào), P2 1, P3 ≥1 (kể 1 lần cụ thể ở chuyến tháng 8; tự kể "khoảng 1 lần mỗi chuyến, thỉnh thoảng 2") · loại: cả 3 lần kể đều là **đóng cửa**, không ai kể "sai giờ" · mỗi lần mất 30–40 phút (P2, P3) và 50.000–120.000đ tiền xe
 - Khảo sát: n = __ · __/__ (__%) …
 
 Phỏng vấn nhiều vai thì đếm theo từng vai, không cộng chung.
 
-| | Vai | Gặp pain? | Số lần / 1 tháng qua | Lần gần nhất mất | Đang xoay xở bằng |
+| | Vai | Gặp pain? | Số lần / 12 tháng qua | Lần gần nhất mất | Đang xoay xở bằng |
 |---|---|---|---|---|---|
-| P1 | Tự lên lịch, đi Tam Đảo | Một phần (quán ăn đóng cửa, không rõ khi nào) | 0 | không nhớ · "không ảnh hưởng lắm đến lịch" | Tra TikTok tìm quán khác |
-| P2 | Tự lên lịch, đi Đà Nẵng 3N2Đ cùng 2 bạn | Có (bảo tàng đóng cửa bảo trì, Maps vẫn hiện mở) | 0 | 30–40 phút · 50.000–100.000đ · bỏ 1 điểm | Google Maps, fanpage, TikTok, Google Sheets |
-| P3 | Tự lên lịch, đi Đà Nẵng – Hội An 4N3Đ cùng 2 bạn | Có (quán cà phê nghỉ thứ Hai, Maps không hiện) | 0 | ~40 phút · ~120.000đ · cắt 1 điểm, xếp lại cả ngày | Google Sheets, Google Maps, trang chính thức |
+| P1 | Tự lên lịch, đi Tam Đảo | Một phần (quán ăn đóng cửa, không rõ khi nào) | không rõ | không nhớ · "không ảnh hưởng lắm đến lịch" | Tra TikTok tìm quán khác |
+| P2 | Tự lên lịch, đi Đà Nẵng 3N2Đ cùng 2 bạn | Có (bảo tàng đóng cửa bảo trì, Maps vẫn hiện mở) | 1 | 30–40 phút · 50.000–100.000đ · bỏ 1 điểm | Google Maps, fanpage, TikTok, Google Sheets |
+| P3 | Tự lên lịch, đi Đà Nẵng – Hội An 4N3Đ cùng 2 bạn | Có (quán cà phê nghỉ thứ Hai, Maps không hiện) | ≥1 | ~40 phút · ~120.000đ · cắt 1 điểm, xếp lại cả ngày | Google Sheets, Google Maps, trang chính thức |
 
 ## 3. ≥5 trích dẫn hoặc ví dụ nguyên văn (có nguồn, bỏ tên)
 
