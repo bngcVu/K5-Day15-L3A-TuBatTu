@@ -40,6 +40,6 @@ Khung chỉ dùng thư viện chuẩn của Python. Thêm thư viện thì ghi v
 
 ## Quy ước của nhóm
 
-- Ngôn ngữ trả lời người dùng: __
-- Phong cách code / đặt tên: __
-- Ai duyệt thay đổi do agent tạo trước khi commit: __
+- Ngôn ngữ trả lời người dùng: tiếng Việt (output bản chạy thử, tài liệu, commit message)
+- Phong cách code / đặt tên: Python thư viện chuẩn; tên hàm, biến bằng tiếng Việt không dấu, snake_case (vd `tra_diem`, `kiem_gio`, `doc_gio`); hàm nội bộ có tiền tố `_`; mã địa điểm dạng `DL01`…; nhãn trong output là `KHỚP` / `VƯỚNG` / `CHƯA ĐỦ THÔNG TIN`
+- Ai duyệt thay đổi do agent tạo trước khi commit: Bùi Ngọc Vũ

@@ -30,6 +30,6 @@
 | Từ đâu | Bản nháp do coding agent viết (`tu_viet`) |
 | Số dòng | 16: thuong 7 · kho 6 · tu_choi 3 (2 câu tấn công) |
 | Nhãn | `synthetic` |
-| Giới hạn | **0/16 câu từ người dùng hoặc data thật.** CP3 cần 20–30 câu và ≥1/3 từ `nguoi_dung` / `data_that` (thêm ≥8 câu thật vào 16 câu này sẽ được 24 câu). Người viết code và người viết câu thử là cùng một agent, nên bộ này dễ nương theo code. **Người kiểm:** chưa có |
+| Giới hạn | **0/16 câu từ người dùng hoặc data thật.** CP3 cần 20–30 câu và ≥1/3 từ `nguoi_dung` / `data_that` (thêm ≥8 câu thật vào 16 câu này sẽ được 24 câu). Người viết code và người viết câu thử là cùng một agent, nên bộ này dễ nương theo code. **Người kiểm:** Tô Minh Thành đã rà cả 16/16 câu (27/11/2026) |
 
 Data tự dựng **không phải bằng chứng pain**.

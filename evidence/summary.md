@@ -8,30 +8,30 @@
 | Nguồn | Đạt ngưỡng? | File |
 |---|---|---|
 | Đào data (x/N, %, cách đếm chạy lại được, ≥5 ví dụ) | ☐ | `evidence/data-mining.md` |
-| Phỏng vấn (≥3 người ngoài nhóm, đúng người dùng) | ☐ | `evidence/interviews/P1.md`… |
+| Phỏng vấn (≥3 người ngoài nhóm, đúng người dùng) | ☑ một phần — đủ 3 người ngoài nhóm, đều tự lên lịch không mua tour, nhưng **không ai đi Đà Lạt** (Tam Đảo, Đà Nẵng, Đà Nẵng – Hội An) | `evidence/interviews/P1.md`, `P2.md`, `P3.md` |
 | Khảo sát (≥20 người ngoài nhóm, đúng người dùng) | ☐ | `evidence/survey/` |
 
 ## 2. Số chính
 
 - Đào data: __/__ (__%) …
-- Phỏng vấn: __/3 người gặp *(n nhỏ không ghi %)* · số lần / tháng: P1 __, P2 __, P3 __ · mỗi lần mất __–__ phút
+- Phỏng vấn: **2/3 người kể được một lần cụ thể trong 12 tháng qua** tới nơi gặp điểm đóng cửa (P2, P3); P1 có gặp nhưng không rõ thời điểm và kể là ít ảnh hưởng *(n nhỏ không ghi %)* · số lần / 1 tháng qua: P1 0, P2 0, P3 0 (cả 3 không đi chuyến nào trong 1 tháng qua) · tần suất tự kể: P1 "hiếm hoi 1–2 lần", P2 "khoảng 1 lần nếu đi 5–7 điểm", P3 "khoảng 1 lần mỗi chuyến, thỉnh thoảng 2" · mỗi lần mất 30–40 phút (P2, P3) và 50.000–120.000đ tiền xe
 - Khảo sát: n = __ · __/__ (__%) …
 
 Phỏng vấn nhiều vai thì đếm theo từng vai, không cộng chung.
 
 | | Vai | Gặp pain? | Số lần / 1 tháng qua | Lần gần nhất mất | Đang xoay xở bằng |
 |---|---|---|---|---|---|
-| P1 | | | | | |
-| P2 | | | | | |
-| P3 | | | | | |
+| P1 | Tự lên lịch, đi Tam Đảo | Một phần (quán ăn đóng cửa, không rõ khi nào) | 0 | không nhớ · "không ảnh hưởng lắm đến lịch" | Tra TikTok tìm quán khác |
+| P2 | Tự lên lịch, đi Đà Nẵng 3N2Đ cùng 2 bạn | Có (bảo tàng đóng cửa bảo trì, Maps vẫn hiện mở) | 0 | 30–40 phút · 50.000–100.000đ · bỏ 1 điểm | Google Maps, fanpage, TikTok, Google Sheets |
+| P3 | Tự lên lịch, đi Đà Nẵng – Hội An 4N3Đ cùng 2 bạn | Có (quán cà phê nghỉ thứ Hai, Maps không hiện) | 0 | ~40 phút · ~120.000đ · cắt 1 điểm, xếp lại cả ngày | Google Sheets, Google Maps, trang chính thức |
 
 ## 3. ≥5 trích dẫn hoặc ví dụ nguyên văn (có nguồn, bỏ tên)
 
-1. "…" — P_ / dòng data __ / phiếu khảo sát __
-2.
-3.
-4.
-5.
+1. "Tới nơi thì cổng đóng, có tờ giấy dán "nghỉ thứ Hai hàng tuần". Trên Maps không hiển thị ngày nghỉ này." — P3
+2. "Đa số là quán nhỏ hoặc điểm tư nhân, còn điểm lớn thì ít khi sai." — P3
+3. "Hôm đó mình định đi một bảo tàng ở Đà Nẵng nhưng đến nơi mới biết bảo tàng đóng cửa để bảo trì, trong khi Google Maps vẫn hiển thị giờ mở cửa bình thường." — P2
+4. "Mình thấy khá bất tiện vì phải tự kiểm tra thông tin từ nhiều nguồn khác nhau, mà đôi khi thông tin vẫn không chính xác." — P2
+5. *(ví dụ, ghi chú tóm tắt — không phải nguyên văn)* Quán ăn nổi tiếng trên TikTok, tới nơi thì đóng cửa; P1 tra TikTok tìm quán khác, "không ảnh hưởng lắm đến lịch". — P1
 
 ## 4. Các nguồn có khớp nhau không
 
@@ -45,4 +45,6 @@ Giả thuyết ở `evidence/hypothesis.md`: **đúng / sai / phải đổi** �
 
 | Vai | Giờ hẹn | Đã xong? |
 |---|---|---|
-| | | |
+| Người tự lên lịch, đi Tam Đảo (P1) | 27/11/2026 khoảng 17:40 | Xong |
+| Người tự lên lịch, đi Đà Nẵng (P2) | 27/11/2026 khoảng 17:40 | Xong |
+| Người tự lên lịch, đi Đà Nẵng – Hội An (P3) | 27/11/2026 khoảng 17:40 | Xong |
