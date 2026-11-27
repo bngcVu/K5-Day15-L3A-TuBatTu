@@ -14,12 +14,12 @@
 ## 2. Số chính
 
 - Đào data: __/__ (__%) …
-- Phỏng vấn: __/3 người gặp *(n nhỏ không ghi %)* · số lần / tháng: P1 __, P2 __, P3 __ · mỗi lần mất __–__ phút
+- Phỏng vấn: __/3 người gặp *(n nhỏ không ghi %)* · số lần / 12 tháng qua: P1 __, P2 __, P3 __ · mỗi lần mất __–__ phút
 - Khảo sát: n = __ · __/__ (__%) …
 
 Phỏng vấn nhiều vai thì đếm theo từng vai, không cộng chung.
 
-| | Vai | Gặp pain? | Số lần / 1 tháng qua | Lần gần nhất mất | Đang xoay xở bằng |
+| | Vai | Gặp pain? | Số lần / 12 tháng qua | Lần gần nhất mất | Đang xoay xở bằng |
 |---|---|---|---|---|---|
 | P1 | | | | | |
 | P2 | | | | | |
