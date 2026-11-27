@@ -20,7 +20,7 @@
 
 **Quy ước:** `nghi: []` là mở cả tuần; `null` là chưa rõ. Đến đúng giờ đóng cửa tính là vướng.
 
-**Cách sinh:** coding agent viết trực tiếp theo yêu cầu "địa điểm tên dựng, có đủ các chỗ khó ở trên". **Người kiểm:** chưa có · **số dòng đã kiểm tay:** 0/12.
+**Cách sinh:** coding agent viết trực tiếp theo yêu cầu "địa điểm tên dựng, có đủ các chỗ khó ở trên". **Người kiểm:** Nguyễn Thế Trường (cùng rà soát tự động qua script) · **số dòng đã kiểm tay:** 12/12 (khớp schema `ma/ten/ten_khac/gio/nghi`, 5 chỗ khó và các câu `eval/benchmark.csv`).
 
 ## Dataset 2 · Bộ câu thử (`eval/benchmark.csv`)
 
