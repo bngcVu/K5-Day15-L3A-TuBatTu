@@ -6,12 +6,33 @@ So giờ làm bằng code ở đây, không để model tự tính.
 """
 import json
 import os
+import re
 
 from tracing import tool, TOOLS  # noqa: F401  (TOOLS: danh sách công cụ đã đăng ký, dùng khi viết vòng lặp agent)
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "diem_dalat.json")
 TEN_THU = {"t2": "Thứ Hai", "t3": "Thứ Ba", "t4": "Thứ Tư", "t5": "Thứ Năm",
            "t6": "Thứ Sáu", "t7": "Thứ Bảy", "cn": "Chủ Nhật"}
+_GIO_HHMM = re.compile(r"^(\d{1,2}):(\d{2})$")
+
+
+def _chuan_thu(thu):
+    """Chuẩn hoá mã thứ hợp lệ ("t2"…"t7", "cn") hoặc trả None."""
+    if not isinstance(thu, str):
+        return None
+    code = thu.strip().lower()
+    return code if code in TEN_THU else None
+
+
+def _chuan_gio(gio):
+    """Chuẩn hoá giờ dạng "HH:MM" (00:00–23:59) hoặc trả None nếu thiếu/sai dạng."""
+    if not isinstance(gio, str):
+        return None
+    m = _GIO_HHMM.match(gio.strip())
+    if not m:
+        return None
+    h, p = int(m.group(1)), int(m.group(2))
+    return "%02d:%02d" % (h, p) if 0 <= h <= 23 and 0 <= p <= 59 else None
 
 
 def doc_diem() -> dict:
@@ -34,6 +55,9 @@ def kiem_gio(ma: str, thu, gio) -> dict:
     d = doc_diem().get(ma)
     if d is None:
         return {"nhan": "chua_du", "ly_do": "không có địa điểm này trong dữ liệu", "nguon": ""}
+
+    thu = _chuan_thu(thu)
+    gio = _chuan_gio(gio)
 
     def ket(nhan, ly_do):
         return {"nhan": nhan, "ly_do": ly_do, "nguon": ma}

@@ -6,12 +6,13 @@ README của nhóm có mục "Dùng AI vào việc gì" (2–3 dòng, bắt bu�
 
 | Việc | Công cụ AI | AI làm gì | Người kiểm/sửa gì | Ai phụ trách |
 |---|---|---|---|---|
-| Code bản chạy thử | Claude Code | Viết `agent.py`, `tools.py`, nhánh Groq trong `ai.py` | Nguyễn Thế Trường | Bùi Ngọc Vũ |
+| Code bản chạy thử (`agent.py`, `ai.py`) | Claude Code | Viết `agent.py`, nhánh Groq trong `ai.py` | Nguyễn Thế Trường | Bùi Ngọc Vũ |
+| Code công cụ (`tools.py`) | Claude Code + Antigravity | Viết và chuẩn hoá kiểm tra đầu vào `tra_diem`, `kiem_gio` | Đã kiểm logic, docstring, và chạy test các ca biên (khớp biên đóng cửa, `thu`/`gio` thiếu hoặc sai dạng) | Nguyễn Thế Trường |
 | Prompt / thiết kế lời gọi mô hình | Claude Code | Viết prompt hệ thống, sơ đồ `spec.md` §4; đề xuất metric và chuẩn "đạt" | Nguyễn Thế Trường | Bùi Ngọc Vũ |
 | Đào data (viết script đếm, gợi ý nhãn) | | | Kiểm tay __ dòng, khớp __ | |
 | Rà câu hỏi phỏng vấn / khảo sát | | Chỉ rà câu dẫn dắt | | |
 | Viết câu thử (benchmark) | Claude Code | Viết nháp 16 câu B01–B16 | Mỗi câu thử có `source`; cả 16 câu là AI viết; Tô Minh Thành rà lại 16/16 câu | Tô Minh Thành |
-| Sinh data `synthetic` (nếu có) | Claude Code | Viết tay 12 địa điểm dựng | Không dùng seed · kiểm tay 0/12 dòng | Nguyễn Thế Trường |
+| Sinh data `synthetic` (nếu có) | Claude Code | Viết tay 12 địa điểm dựng | Không dùng seed · đã kiểm 12/12 dòng khớp schema, quy ước và 5 chỗ khó | Nguyễn Thế Trường |
 | Chấm cột `pass` bằng LLM (nếu có) | | | Kiểm tra thủ công __ câu thử, khớp __/__ | |
 | Slide, văn bản | | | | |
 

@@ -90,7 +90,7 @@ Nhóm dùng stack khác (Node, Streamlit, notebook…): sửa hàm `run_app()` t
 
 2–3 dòng (bắt buộc): nhóm dùng công cụ AI nào để làm gì, người kiểm lại phần nào. Chi tiết: [docs/ai-usage.md](docs/ai-usage.md). Coding agent đọc [AGENTS.md](AGENTS.md).
 
-Nhóm dùng **Claude Code** để viết nháp code bản chạy thử (`agent.py`, `tools.py`, nhánh Groq trong `ai.py`), prompt hệ thống, 12 địa điểm dựng trong `data/diem_dalat.json` và 16 câu thử B01–B16 trong `eval/benchmark.csv`. Không dùng AI để tạo người được phỏng vấn, trích dẫn hay câu trả lời khảo sát. Người kiểm: code và prompt — Nguyễn Thế Trường; 16 câu thử — Tô Minh Thành; 12 địa điểm dựng — chưa có người kiểm. Chi tiết ở `docs/ai-usage.md`.
+Nhóm dùng **Claude Code** để viết nháp code bản chạy thử (`agent.py`, `tools.py`, nhánh Groq trong `ai.py`), prompt hệ thống, 12 địa điểm dựng trong `data/diem_dalat.json` và 16 câu thử B01–B16 trong `eval/benchmark.csv`. Không dùng AI để tạo người được phỏng vấn, trích dẫn hay câu trả lời khảo sát. Người kiểm: code và prompt — Nguyễn Thế Trường; 16 câu thử — Tô Minh Thành; 12 địa điểm dựng — Nguyễn Thế Trường (12/12). Chi tiết ở `docs/ai-usage.md`.
 
 ## File mẫu — điền ở bước nào
 
