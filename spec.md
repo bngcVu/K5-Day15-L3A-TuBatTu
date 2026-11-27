@@ -145,15 +145,16 @@ flowchart TD
 - Ai có thể bị hại nếu AI sai, và nhóm chặn thế nào:
 
 ## §10. Phân công & changelog
-- Phân công có tên (theo chặng, chia cặp — guide "Cách chia việc"): __
-- Dùng AI vào việc gì (2–3 dòng; chi tiết `docs/ai-usage.md`):
+- Phân công có tên (theo chặng, chia cặp): Bùi Ngọc Vũ (Đội trưởng - Agent/Prompt/Chạy Eval); Nguyễn Thế Trường (Công cụ tools.py / Data địa điểm / Data Card); Tô Minh Thành (Bộ câu thử Benchmark / Metric); Nguyễn Thị Dung (Bằng chứng Pain / Phỏng vấn & Khảo sát).
+- Dùng AI vào việc gì (2–3 dòng; chi tiết `docs/ai-usage.md`): Dùng Claude Code để hỗ trợ viết khung `agent.py`, `tools.py` và nháp bộ câu thử; dùng Antigravity rà soát và kiểm thử tự động. Thành viên người thật đã rà soát 100% logic, dữ liệu và câu thử.
 - Nhật ký thay đổi — **mọi thay đổi sau CP2 19:30 Thứ Sáu 27/11 phải có dòng ở đây**:
 
 **CP2 → CP4** (vd thu hẹp lát cắt, hỏi thêm người dùng, lần cải tiến trước lượt 2)
 
 | Thời điểm | Đổi gì | Vì sao (trỏ về câu thử / lỗi / bằng chứng nào) |
 |---|---|---|
-|  |  |  |
+| 27/11 23:25 | Cập nhật kết quả khảo sát n=19/21 vào `evidence/summary.md` | Hoàn thành thu thập bằng chứng định lượng đạt ngưỡng giả thuyết (89.5% gặp vấn đề) |
+| 27/11 23:30 | Mở rộng bộ câu thử từ 16 lên 24 câu (thêm 8 câu `source: nguoi_dung`) | Đáp ứng chuẩn CP3 (20–30 câu và ≥1/3 câu từ người dùng thật), phản ánh đúng các ca người dùng kể (bảo tàng bảo trì, quán nghỉ thứ Hai, đến quá sớm) |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 

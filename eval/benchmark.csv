@@ -1,4 +1,4 @@
-﻿id,input,expected,pass_criterion,type,source
+id,input,expected,pass_criterion,type,source
 B01,"Thứ Ba: 8h Đồi Mơ Sương, 10h Thác Nai Ngủ, 18h Chợ Đêm Phố Sương",DL01 KHỚP; DL08 KHỚP; DL05 KHỚP,"Mỗi mục đúng nhãn và đúng địa điểm như expected, không thừa, không thiếu mục",thuong,"tu_viet: nháp do coding agent viết, nhóm duyệt"
 B02,"Thứ Hai: 8h Đồi Mơ Sương, 10h Thác Nai Ngủ",DL01 VƯỚNG (nghỉ Thứ Hai); DL08 KHỚP,"Mỗi mục đúng nhãn và đúng địa điểm như expected, không thừa, không thiếu mục",thuong,"tu_viet: nháp do coding agent viết, nhóm duyệt"
 B03,"Thứ Năm: 12h Bảo tàng Lá Thông, 14h Dinh Thự Rừng Thông",DL04 VƯỚNG (nghỉ trưa 11:30–13:30); DL11 KHỚP,"Mỗi mục đúng nhãn và đúng địa điểm như expected, không thừa, không thiếu mục",thuong,"tu_viet: nháp do coding agent viết, nhóm duyệt"

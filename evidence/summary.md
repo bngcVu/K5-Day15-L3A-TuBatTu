@@ -13,7 +13,7 @@
 
 ## 2. Số chính
 
-- Đào data: __/__ (__%) …
+- Đào data: Không áp dụng (Track C không được BTC cấp data đào, nhóm dùng 2 nguồn phỏng vấn và khảo sát đạt ngưỡng).
 - Phỏng vấn: **2/3 người kể được một lần cụ thể trong 12 tháng qua** tới nơi gặp điểm đóng cửa (P2, P3); mỗi lần mất 30–40 phút và 50.000–120.000đ tiền xe.
 - Khảo sát: **n = 19** người tự lên lịch chuyến đi 2–3 ngày trong 12 tháng qua (19/21 người, 2 người trả lời Không bị loại):
   - **17/19 người (89.5%)** từng gặp sự cố điểm đóng cửa hoặc sai giờ:
