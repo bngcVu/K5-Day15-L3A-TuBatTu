@@ -13,17 +13,28 @@
 | # | Câu hỏi | Kiểu trả lời | Dùng để |
 |---|---|---|---|
 | 1 | Trong 12 tháng qua, bạn có tự lên lịch (không mua tour) cho một chuyến đi 2–3 ngày không? | Có · Không → *kết thúc form, không tính vào n* | Sàng lọc đúng vai |
-| 2 | Chuyến gần nhất đó đi đâu? | Đà Lạt · Nơi khác trong nước · Nước ngoài | Mô tả mẫu |
-| 3 | Bạn bắt đầu lên lịch trước ngày đi khoảng bao lâu? | Dưới 1 tuần · 1–4 tuần · Trên 1 tháng | Mô tả mẫu |
-| 4 | Bạn kiểm giờ mở cửa của các điểm bằng cách nào? | Chọn nhiều: Google Maps · Trang / fanpage của điểm · Bài review / blog · Hỏi bạn bè · Gọi điện · Không kiểm · Khác | Cách xoay xở hiện tại |
-| 5 | Việc kiểm giờ mở cửa cho cả lịch trình mất khoảng bao lâu? | Không kiểm · Dưới 15' · 15–30' · 30–60' · Trên 60' | Chi phí hiện tại |
-| 6 | Trong 12 tháng qua, bạn có lần nào tới một điểm mà nó đóng cửa hoặc khác giờ bạn dự định không? | Có, **đóng cửa / ngày nghỉ** · Có, **giờ khác dự định** · Có, cả hai · Không | **Số chính của giả thuyết** |
-| 7 | *(Nếu câu 6 ≠ Không)* Lần gần nhất đó bạn xử lý thế nào? | Chọn một: Đổi sang điểm khác ngay · Chờ tới giờ mở · Bỏ điểm đó · Xếp lại cả buổi / ngày · Khác | Hậu quả |
-| 8 | *(Nếu câu 6 ≠ Không)* Lần đó bạn mất thêm khoảng bao lâu? | Dưới 15' · 15–30' · 30–60' · Trên 60' | Hậu quả |
-| 9 | Bước nào khi lên lịch khiến bạn mất công hoặc khó chịu nhất? Kể về lần gần nhất. | Đoạn văn | Kiểm cách giải thích khác (pain là việc khác?) và lấy trích dẫn |
-| 10 | *(Tuỳ chọn)* Bạn có sẵn lòng cho nhóm hỏi thêm 10 phút không? | Có — để cách liên hệ (không bắt buộc) · Không | Nguồn phỏng vấn thêm |
+| 2 | Chuyến gần nhất đó đi đâu? |Chọn một: Trong nước · Nước ngoài | Mô tả mẫu |
+| 3 | Bạn bắt đầu lên lịch trước ngày đi khoảng bao lâu? | Chọn một: Dưới 1 tuần · Từ 1 tuần đến 1 tháng · Trên 1 tháng | Mô tả mẫu |
+| 4 | Bạn kiểm giờ mở cửa của các điểm bằng cách nào? | Chọn nhiều: Google Maps · Trang / fanpage của điểm đến · Bài review / blog · Hỏi bạn bè · Gọi điện tới điểm đến · Không kiểm giờ mở cửa · Khác | Cách xoay xở hiện tại |
+| 5 | Việc kiểm giờ mở cửa cho cả lịch trình mất khoảng bao lâu? | Chọn một: Không kiểm · Dưới 15 phút · 15–30 phút · 30–60 phút · Trên 60 phút | Chi phí hiện tại |
+| 6 | Trong 12 tháng qua, bạn có lần nào tới một điểm mà nó đóng cửa hoặc khác giờ bạn dự định không ? | Chọn một: Có, **đóng cửa / ngày nghỉ** · Có, **giờ khác dự định** · Có, cả hai · Không | **Số chính của giả thuyết** |
+| 7 | Lần gần nhất không theo kế hoạch đã chốt bạn xử lý như thế nào ? | Chọn một: Đổi sang điểm khác tương tự ngay  · Chờ tới giờ mở · Bỏ qua hoạt động đó · Khác | Hậu quả |
+| 8 | Lần đó bạn mất thêm khoảng bao lâu? | Chọn một: Dưới 15 phút · 15–30 phút · 30–60 phút · Trên 60 phút | Hậu quả |
+| 9 | Bước nào khi lên lịch khiến bạn mất công hoặc khó chịu nhất ?| Chọn một : Tìm kiếm địa điểm phù hợp với sở thích · Xem đánh giá các địa điểm trên mạng xã hội / google map · Kiểm tra giờ mở cửa và đóng cửa · Sắp xếp kế hoạch đi qua các địa điểm · Thay đổi địa điểm bất ngờ do địa điểm không mở cửa · Khác | Kiểm cách giải thích khác (pain là việc khác ?)|
+| 10 | Kể lại lần gần nhất bạn gặp điểm đóng cửa hoặc khác giờ | Đoạn văn (tuỳ chọn) | Lấy trích dẫn |
 
-Câu 9 không gợi ý "giờ mở cửa" để xem có ai tự nhắc tới không.
+## Nhật ký thay đổi form (ghi trung thực, không xoá)
+
+| Phiên bản | Thời gian | Khác gì | Phiếu thuộc bản này |
+|---|---|---|---|
+| A | mở 17:5x 27/11 | 9 câu. Câu 6 hỏi "Trong chuyến du lịch đó…" (chuyến gần nhất, không nêu mốc 12 tháng). Không có câu 10 | 7 phiếu đầu, Timestamp 17:54–17:58 |
+| B | sửa lúc 18:20 27/11 | Câu 6 đổi thành "Trong 12 tháng qua…". Thêm câu 10 (mở, tuỳ chọn). Các câu còn lại giữ nguyên *(câu 7 có "Khác" từ trước khi public, file chỉ ghi chưa kịp)* | Phiếu từ Timestamp ≥ 18:20 27/11 |
+
+**Khi đếm câu 6:**
+- Chuyến gần nhất nằm trong 12 tháng (câu 1 đã lọc), nên một đáp án "Có" ở bản A cũng là "Có" cho 12 tháng. Vì vậy với **tỷ lệ đã gặp**, được gộp bản A và B.
+- Một đáp án "Không" ở bản A **không** suy ra "Không" cho 12 tháng. Phiếu như vậy phải tách riêng, không tính vào mẫu số của giả thuyết.
+- Phần phân loại (đóng cửa / giờ khác / cả hai) của bản A có thể hụt vì chỉ nghĩ tới một chuyến. Nêu rõ khi báo cáo.
+- Ghi vào `summary.md` rằng câu 6 đổi cách hỏi, kèm giờ đổi.
 
 ## Cách đếm (viết trước khi xem kết quả)
 
@@ -41,5 +52,5 @@ Câu 9 không gợi ý "giờ mở cửa" để xem có ai tự nhắc tới kh�
 
 ## Lưu vào thư mục này
 
-- `results.csv` — bản xuất **đã xoá** mọi cột nhận ra người trả lời (nên xoá cả cột câu 10 nếu có thông tin liên hệ). Bản gốc còn thông tin cá nhân thì **không** commit.
-- Số chính + ≥3 câu trả lời nguyên văn (từ câu 9) → chép vào `evidence/summary.md`.
+- `results.csv` — bản xuất từ Google Form (bản B có 10 câu, không thu email), **đã xoá** mọi cột nhận ra người trả lời nếu có. Giữ cột `Timestamp` để loại phiếu trùng. Bản gốc còn thông tin cá nhân thì **không** commit.
+- Số chính (câu 6, bản B) → chép vào `evidence/summary.md`. Câu 10 là câu mở tuỳ chọn: lấy trích dẫn nguyên văn từ đó (chỉ từ bản B, ẩn danh), bổ sung từ phỏng vấn (`P1.md`…). Câu 9 là trắc nghiệm, dùng để đếm bước nào gây khó chịu nhất.
