@@ -17,7 +17,10 @@ Chế độ giả (mặc định khi .env chưa có MODEL_PROVIDER, hoặc MODEL
 Nối model thật: điền .env (chép từ .env.example), rồi viết nhánh gọi API ở dưới theo docs/connect-model.md
 (có ví dụ OpenAI, Claude, model chạy trên máy, và cách nối nhà cung cấp khác). Không dán API key vào file này.
 """
+import json
 import os
+import urllib.error
+import urllib.request
 
 from tracing import model_call
 
@@ -49,8 +52,31 @@ def call_model(system: str, user: str) -> dict:
         last = (user.strip().splitlines() or [""])[-1]
         return {"text": "[câu trả lời giả — chưa nối model] " + last[:60], "model": "fake", "tokens_in": 0, "tokens_out": 0}
 
-    # NHÓM VIẾT: gọi model thật ở đây (theo MODEL_PROVIDER, MODEL_NAME, API_KEY) rồi trả đúng 4 khoá.
-    # Ví dụ chép được cho từng nhà cung cấp: docs/connect-model.md mục 2.
-    raise NotImplementedError(
-        "chưa viết phần gọi model thật cho MODEL_PROVIDER=%s trong codebase/ai.py — xem docs/connect-model.md"
-        % MODEL_PROVIDER)
+    if MODEL_PROVIDER != "groq":
+        raise NotImplementedError(
+            "chưa viết phần gọi model thật cho MODEL_PROVIDER=%s trong codebase/ai.py — xem docs/connect-model.md"
+            % MODEL_PROVIDER)
+    r = call_groq(system, user)
+    return {"text": r["text"], "model": MODEL_NAME,
+            "tokens_in": int(r["tokens_in"]), "tokens_out": int(r["tokens_out"])}
+
+
+URL_GROQ = "https://api.groq.com/openai/v1/chat/completions"  # API định dạng OpenAI (docs/connect-model.md 2.1)
+
+
+def call_groq(system, user, timeout=60):
+    """Gọi đúng MỘT lần model. Chỉ dùng thư viện chuẩn."""
+    messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": user}]
+    body = {"model": MODEL_NAME, "messages": messages, "temperature": 0}
+    req = urllib.request.Request(
+        URL_GROQ, data=json.dumps(body).encode("utf-8"), method="POST",
+        headers={"Content-Type": "application/json", "Authorization": "Bearer " + API_KEY,
+                 "User-Agent": "k5-day15-prototype"})  # User-Agent mặc định của urllib có thể bị chặn
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError("HTTP %d: %s" % (e.code, e.read().decode("utf-8", "replace")[:300]))
+    u = data["usage"]
+    return {"text": data["choices"][0]["message"]["content"] or "",
+            "tokens_in": u["prompt_tokens"], "tokens_out": u["completion_tokens"]}

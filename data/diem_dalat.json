@@ -1,0 +1,18 @@
+{
+  "nhan": "synthetic",
+  "ghi_chu": "Địa điểm, giờ mở cửa và ngày nghỉ đều là DỰNG (tên dựng), không phải thông tin du lịch thật. nghi = null: chưa rõ ngày nghỉ. gio = null: chưa rõ giờ mở. nghi = []: mở cả tuần.",
+  "diem": [
+    {"ma": "DL01", "ten": "Đồi Mơ Sương", "ten_khac": [], "gio": [["07:00", "17:00"]], "nghi": ["t2"]},
+    {"ma": "DL02", "ten": "Vườn Hoa Thung Gió", "ten_khac": ["vườn hoa"], "gio": [["07:30", "18:00"]], "nghi": []},
+    {"ma": "DL03", "ten": "Vườn Hoa Đồi Nắng", "ten_khac": ["vườn hoa"], "gio": [["08:00", "16:30"]], "nghi": []},
+    {"ma": "DL04", "ten": "Bảo tàng Lá Thông", "ten_khac": ["bảo tàng"], "gio": [["07:30", "11:30"], ["13:30", "16:30"]], "nghi": ["t2"]},
+    {"ma": "DL05", "ten": "Chợ Đêm Phố Sương", "ten_khac": ["chợ đêm"], "gio": [["17:00", "23:00"]], "nghi": []},
+    {"ma": "DL06", "ten": "Ga Xe Lửa Cổ Mây Trắng", "ten_khac": ["ga cổ"], "gio": [["07:00", "17:30"]], "nghi": []},
+    {"ma": "DL07", "ten": "Quán Cà Phê Hiên Mưa", "ten_khac": ["cà phê Hiên Mưa"], "gio": [["06:30", "22:00"]], "nghi": ["t4"]},
+    {"ma": "DL08", "ten": "Thác Nai Ngủ", "ten_khac": [], "gio": [["07:00", "17:00"]], "nghi": []},
+    {"ma": "DL09", "ten": "Làng Len Cổ Tích", "ten_khac": ["làng len"], "gio": null, "nghi": null},
+    {"ma": "DL10", "ten": "Nông Trại Dâu Bình Minh", "ten_khac": ["vườn dâu Bình Minh"], "gio": [["08:00", "17:00"]], "nghi": null},
+    {"ma": "DL11", "ten": "Dinh Thự Rừng Thông", "ten_khac": ["dinh thự"], "gio": [["08:00", "17:00"]], "nghi": ["t3"]},
+    {"ma": "DL12", "ten": "Show Đèn Hồ Sương", "ten_khac": ["show đèn"], "gio": [["19:00", "21:00"]], "nghi": ["t2", "t3", "t4", "t5"]}
+  ]
+}

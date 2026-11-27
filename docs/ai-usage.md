@@ -6,12 +6,12 @@ README của nhóm có mục "Dùng AI vào việc gì" (2–3 dòng, bắt bu�
 
 | Việc | Công cụ AI | AI làm gì | Người kiểm/sửa gì | Ai phụ trách |
 |---|---|---|---|---|
-| Code bản chạy thử | | | | |
-| Prompt / thiết kế lời gọi mô hình | | | | |
+| Code bản chạy thử | Claude Code | Viết `agent.py`, `tools.py`, nhánh Groq trong `ai.py` | Chưa có người kiểm | Bùi Ngọc Vũ |
+| Prompt / thiết kế lời gọi mô hình | Claude Code | Viết prompt hệ thống, sơ đồ `spec.md` §4; đề xuất metric và chuẩn "đạt" | Chưa có người kiểm | Bùi Ngọc Vũ |
 | Đào data (viết script đếm, gợi ý nhãn) | | | Kiểm tay __ dòng, khớp __ | |
 | Rà câu hỏi phỏng vấn / khảo sát | | Chỉ rà câu dẫn dắt | | |
-| Viết câu thử (benchmark) | | | Mỗi câu thử có `source`; câu thử AI viết được ghi rõ | |
-| Sinh data `synthetic` (nếu có) | | | Seed __ · kiểm tay __ dòng | |
+| Viết câu thử (benchmark) | Claude Code | Viết nháp 16 câu B01–B16 | Mỗi câu thử có `source`; cả 16 câu là AI viết, chưa có người kiểm | Tô Minh Thành |
+| Sinh data `synthetic` (nếu có) | Claude Code | Viết tay 12 địa điểm dựng | Không dùng seed · kiểm tay 0/12 dòng | Nguyễn Thế Trường |
 | Chấm cột `pass` bằng LLM (nếu có) | | | Kiểm tra thủ công __ câu thử, khớp __/__ | |
 | Slide, văn bản | | | | |
 
