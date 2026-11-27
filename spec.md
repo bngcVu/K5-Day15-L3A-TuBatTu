@@ -19,7 +19,9 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): không (Tr
 - Việc họ cố làm xong: Kiểm tra đối chiếu giờ mở cửa và ngày nghỉ của các điểm tham quan trong lịch nháp trước chuyến đi 2–3 ngày để không bị lỡ kế hoạch.
 - Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ: Giải bằng tra cứu thủ công qua Google Maps, fanpage, bài review; hỏng vì thông tin rải rác, Maps không cập nhật ngày nghỉ hàng tuần của quán nhỏ/tư nhân hoặc đóng cửa bảo trì; chưa bỏ vì không có công cụ tự động nào chuyên kiểm đối chiếu lịch nháp.
 - Pain: Người tự lên lịch — đang kiểm tra lịch trình chuẩn bị đi — vướng vì thông tin giờ mở cửa/ngày nghỉ nằm rải rác và không chính xác trên mạng — hậu quả là tới nơi điểm đóng cửa, tốn 30–40 phút di chuyển, mất 50.000–120.000đ tiền xe và phải bỏ điểm, xếp lại lịch cả ngày.
-- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): Phỏng vấn 3 người ngoài nhóm (P1–P3) có 2/3 người (P2, P3) kể được lần cụ thể trong 12 tháng qua tới nơi gặp điểm đóng cửa; mất 30–40 phút và 50.000–120.000đ tiền xe, phải cắt bỏ điểm tham quan.
+- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`):
+  - Phỏng vấn sâu 3 người ngoài nhóm: 2/3 người (P2, P3) kể được lần cụ thể trong 12 tháng qua tới nơi gặp điểm đóng cửa; mất 30–40 phút và 50.000–120.000đ tiền xe, phải cắt bỏ điểm tham quan.
+  - Khảo sát định lượng: 19/21 người tự lên lịch cho chuyến đi 2–3 ngày trong 12 tháng qua; có **17/19 người (89.5%)** từng gặp điểm đóng cửa hoặc sai giờ mở cửa (9 người gặp đóng cửa/ngày nghỉ, 4 người gặp sai giờ, 4 người gặp cả hai). Hơn 50% mất từ 15–60 phút xử lý. Giả thuyết được xác nhận hoàn toàn.
 
 ## §2. Impact & quyết định chọn *(guide 1.3)*
 

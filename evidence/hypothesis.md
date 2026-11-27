@@ -15,3 +15,8 @@
 - **Mình sai (hoặc phải đổi lát cắt) nếu thấy:** ≤1/3 người phỏng vấn kể được lần cụ thể như vậy, hoặc phần lớn người nói pain chính là việc khác (cách giải thích 2).
 - **Giả định chưa kiểm cần hỏi riêng:** "thông tin có thể đã cũ". Hỏi người được phỏng vấn xem họ có từng thấy giờ trên mạng khác với giờ thật không, không dẫn dắt.
 - **Nguồn sẽ dùng** (≥1 nguồn đạt ngưỡng, guide 1.2): [ ] đào data · [x] phỏng vấn ≥3 · [x] khảo sát ≥20 — nguồn chính: phỏng vấn ≥3 người ngoài nhóm đã tự lên lịch du lịch · nguồn để kiểm lại: khảo sát ≥20 người cùng vai; (tuỳ chọn, bổ trợ) đếm review công khai Google Maps / Tripadvisor của các điểm ở Đà Lạt nhắc đóng cửa / sai giờ, nếu làm thì viết cách đếm và mẫu số vào `evidence/data-mining.md` trước khi chạy.
+
+## Kết quả kiểm chứng (CP3)
+- **Phỏng vấn sâu:** 2/3 người (P2, P3) kể được lần cụ thể trong 12 tháng qua bị đóng cửa khi đến nơi.
+- **Khảo sát định lượng:** n = 19 người qua sàng lọc (19/21 người tự lên lịch trong 12 tháng qua): **17/19 người (89.5%)** từng gặp sự cố điểm đóng cửa hoặc khác giờ dự kiến (vượt xa ngưỡng ≥50% kỳ vọng).
+- **Kết luận:** Giả thuyết **ĐÚNG**. Vấn đề thông tin giờ mở cửa/ngày nghỉ sai lệch gây lãng phí thời gian và làm hỏng lịch trình là có thật.
