@@ -20,4 +20,8 @@ Ai nói trang nào (mỗi người ≥1 phần):
 
 | Trang | Người nói |
 |---|---|
-| | |
+| Trang 1–2: Người dùng & Pain, Vì sao chọn | Nguyễn Thị Dung |
+| Trang 3: Giải pháp (Sơ đồ, AI gợi ý & Code kiểm giờ, giới hạn) | Nguyễn Thế Trường |
+| Trang 4: Demo live & Kiến trúc chạy thử | Bùi Ngọc Vũ |
+| Trang 5: Đánh giá & Dataset (Benchmark, Metric, Kết quả) | Tô Minh Thành |
+| Trang 6–8: Chi phí, Kết luận & Hướng phát triển | Bùi Ngọc Vũ / Nguyễn Thế Trường |

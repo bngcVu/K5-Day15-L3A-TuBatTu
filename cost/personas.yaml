@@ -12,25 +12,25 @@ users:              # số người dùng thật nếu đưa vào dùng — 3 k�
                     # track A: khoá học · track B–F: người dùng của sản phẩm / nhóm nhắm tới, nguồn công khai có link
   low: 300
   base: 700
-  high: 1000
-  source: "(ví dụ) track A — thay bằng số của nhóm. Cơ sở: lớp L3 hơn 700 học viên (README hackathon); thấp, cao: (tự ước tính)"
+  high: 1200
+  source: "Ước tính từ tệp học viên L3 (~700 học viên, README hackathon) và du khách tự lên lịch đi Đà Lạt; thấp: nhóm nhỏ ban đầu, cao: mở rộng các lớp/cộng đồng du lịch"
 
 personas:           # ≥3 kiểu người dùng; share cộng lại = 1
   - name: dung_it
     share: 0.5              # tỉ lệ người dùng kiểu này
-    uses_per_month: 4       # số phiên / người / tháng
+    uses_per_month: 2       # số phiên / người / tháng
     turns_per_session: 1    # số lượt hỏi trong một phiên
-    source: "(ví dụ) phỏng vấn P1, P3 — thay bằng nguồn của nhóm"
+    source: "Phỏng vấn P1: người ít đi du lịch tự túc (1–2 lần/năm), mỗi lần chỉ kiểm lịch 1–2 lần sát ngày đi"
   - name: dung_vua
     share: 0.3
-    uses_per_month: 10
-    turns_per_session: 3
-    source: "(ví dụ) khảo sát n = 24, câu 3"
+    uses_per_month: 6
+    turns_per_session: 2
+    source: "Phỏng vấn P2: người tự lên lịch cho nhóm bạn (3–4 chuyến/năm), kiểm và chỉnh sửa lịch vài lần mỗi chuyến"
   - name: dung_nhieu
     share: 0.2
-    uses_per_month: 20
-    turns_per_session: 5
-    source: "(ví dụ) data/preclass: đếm số lượt / người — cách đếm ở evidence/data-mining.md"
+    uses_per_month: 12
+    turns_per_session: 3
+    source: "Phỏng vấn P3: người thường xuyên tự lên lịch, kiểm tra chi tiết từng ngày và dán lại nhiều lượt khi đổi điểm"
 # Mỗi lượt hỏi lấy ngẫu nhiên một đầu vào trong eval/benchmark.csv (type thuong và kho).
 # Persona hỏi kiểu riêng: thêm vào persona đó
 #     types: [thuong, kho, tu_choi]
@@ -41,12 +41,12 @@ prices:             # USD / 1 triệu token — chép từ further-reading/model
   - model: gemini-3.1-flash-lite
     input: 0.25
     output: 1.50
-    source: "(ví dụ) https://ai.google.dev/gemini-api/docs/pricing · xem 25/11/2026"
+    source: "https://ai.google.dev/gemini-api/docs/pricing · xem 27/11/2026"
   - model: gemini-4-hydrogen
     input: 1.50
     output: 7.50
-    source: "(ví dụ) https://ai.google.dev/gemini-api/docs/pricing · xem 25/11/2026"
+    source: "https://ai.google.dev/gemini-api/docs/pricing · xem 27/11/2026"
 
 usd_to_vnd:         # tuỳ chọn: điền thì bản tóm tắt in thêm tiền Việt
-  rate:
-  source:
+  rate: 25400
+  source: "Tỉ giá Vietcombank ngày 27/11/2026"

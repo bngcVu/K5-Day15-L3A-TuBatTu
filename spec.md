@@ -7,30 +7,37 @@ Track: [ ] A · [ ] B · [x] C · [ ] D · [ ] E — bài toán: nhóm tự mở
 Data BTC cấp đã dùng (nếu có — không commit nguyên file): không (Track C không được cấp data)
 
 ## §0. Hiện tại việc này diễn ra thế nào *(guide 1.1)*
-- Luồng hiện tại của việc này, trong khoá hoặc trên app thật (3–5 bước; ảnh chụp từ tài khoản của mình, đã che thông tin):
-- Công cụ / AI đang được dùng cho việc này (nếu có) + nguồn. Không kiểm được thì ghi "chưa kiểm":
+- Luồng hiện tại của việc này:
+  1. Người lên lịch mở Google Sheets / Note ghi nháp các điểm muốn đi theo từng buổi trong ngày (sáng, chiều, tối).
+  2. Mở Google Maps, fanpage hoặc TikTok tìm từng điểm để xem giờ mở cửa và ngày nghỉ.
+  3. Ghi chú thủ công giờ mở cửa vào lịch nháp hoặc chỉ nhớ mang máng.
+  4. Sát ngày đi hoặc đến nơi mới phát hiện điểm đóng cửa (nghỉ cố định theo thứ hoặc bảo trì đột xuất), dẫn đến việc phải đổi điểm vội vàng trên đường đi.
+- Công cụ / AI đang được dùng cho việc này (nếu có) + nguồn: Google Maps (xem giờ mở/đóng), ChatGPT / Claude (hỏi lịch trình mẫu chung chung nhưng AI thường bịa giờ mở cửa không có căn cứ) — nguồn: phỏng vấn P2, P3 (`evidence/interviews/P2.md`, `P3.md`).
 
 ## §1. Người dùng & bằng chứng *(guide 1.1, 1.2)*
-- Người dùng chính (một vai cụ thể):
-- Việc họ cố làm xong (`động từ + đối tượng + bối cảnh`, không có chữ AI):
-- Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ:
-- Pain (KHÔNG chữ AI): ai — đang làm gì — vướng đâu — hậu quả gì:
-- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): __
+- Người dùng chính (một vai cụ thể): Người tự lên lịch (không mua tour) cho chuyến du lịch 2–3 ngày của nhóm bạn, đã có lịch nháp và chuẩn bị đi.
+- Việc họ cố làm xong: Kiểm tra đối chiếu giờ mở cửa và ngày nghỉ của các điểm tham quan trong lịch nháp trước chuyến đi 2–3 ngày để không bị lỡ kế hoạch.
+- Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ: Giải bằng tra cứu thủ công qua Google Maps, fanpage, bài review; hỏng vì thông tin rải rác, Maps không cập nhật ngày nghỉ hàng tuần của quán nhỏ/tư nhân hoặc đóng cửa bảo trì; chưa bỏ vì không có công cụ tự động nào chuyên kiểm đối chiếu lịch nháp.
+- Pain: Người tự lên lịch — đang kiểm tra lịch trình chuẩn bị đi — vướng vì thông tin giờ mở cửa/ngày nghỉ nằm rải rác và không chính xác trên mạng — hậu quả là tới nơi điểm đóng cửa, tốn 30–40 phút di chuyển, mất 50.000–120.000đ tiền xe và phải bỏ điểm, xếp lại lịch cả ngày.
+- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): Phỏng vấn 3 người ngoài nhóm (P1–P3) có 2/3 người (P2, P3) kể được lần cụ thể trong 12 tháng qua tới nơi gặp điểm đóng cửa; mất 30–40 phút và 50.000–120.000đ tiền xe, phải cắt bỏ điểm tham quan.
 
 ## §2. Impact & quyết định chọn *(guide 1.3)*
 
 | Hướng | Bao nhiêu người gặp | Bao nhiêu lần / tháng | Mỗi lần tốn gì | Impact / tháng | Làm kịp không | Chọn? |
 |---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| Kiểm giờ mở cửa / ngày nghỉ lịch nháp Đà Lạt 2–3 ngày | ~700 người (học viên / du khách tự túc) | 1–2 lần / tháng | 30–40 phút kiểm tra thủ công + rủi ro mất 50k–120k tiền xe | ~700 người × 1.5 lần × 35 phút ≈ 612 giờ / tháng | Kịp (phạm vi workflow hẹp, 1 lần gọi model + code so giờ) | Chọn |
+| Tự động tạo toàn bộ lịch trình du lịch tối ưu đường đi | Rất nhiều du khách | 1 lần / chuyến | 2–3 giờ nghiên cứu | Lớn | Không kịp (quá rộng, phụ thuộc nhiều API bản đồ / routing) | Loại |
+| Đặt vé và gợi ý combo giá rẻ | Khách du lịch | 1 lần / chuyến | 30 phút tìm vé | Trung bình | Không kịp (cần tích hợp cổng thanh toán / đối tác) | Loại |
 
-- **Impact / tháng** của hướng chọn = __ người × __ lần × __ phút = __ — nguồn từng thừa số: __ (không có nguồn thì ghi rõ *(tự ước tính)*)
-- Hướng ĐÃ LOẠI + vì sao (giữ lại, đừng xoá):
-- Số lần / tháng của từng kiểu người dùng (dùng cho persona ở §8):
+- **Impact / tháng** của hướng chọn = 700 người × 1.5 lần × 35 phút = 36.750 phút (~612 giờ tiết kiệm và tránh lãng phí chi phí đi lại) — nguồn: quy mô lớp L3 (~700 học viên) và phỏng vấn P2, P3.
+- Hướng ĐÃ LOẠI + vì sao: Loại hướng tạo lịch trình tự động toàn diện và đặt vé vì không thể kiểm chứng chất lượng và vượt quá thời gian làm trong hackathon.
+- Số lần / tháng của từng kiểu người dùng (dùng cho persona ở §8): Người đi ít: 4 lần/năm (~0.33 lần/tháng); Người đi vừa: 10 lần/năm; Người đi nhiều: 20 lần/năm.
 
 ## §3. Giải pháp tương tự *(guide 2.1)*
-- [sản phẩm / tính năng gần giống]: một điều đáng học · một điều đáng né · mình khác gì
+- Google Maps:
+  - Một điều đáng học: Giao diện trực quan, dữ liệu giờ mở cửa phong phú cho các địa điểm lớn.
+  - Một điều đáng né: Bắt người dùng phải tra cứu từng điểm một cách rời rạc, thông tin ngày nghỉ của các quán nhỏ/điểm địa phương hay bị sai hoặc thiếu.
+  - Mình khác gì: Người dùng chỉ cần dán nguyên đoạn lịch trình nháp 2–3 ngày viết tự do; hệ thống tự động tách từng mục, đối chiếu đồng loạt với dữ liệu đã kiểm chứng và chỉ ra ngay điểm nào bị vướng kèm mã nguồn rõ ràng.
 
 ## §4. Thiết kế *(guide 2.2, 3.2)*
 - **Lát cắt MỘT CÂU** (1 người dùng · 1 việc · 1 quyết định AI · 1 kết quả): Một người tự lên lịch dán lịch nháp đi Đà Lạt 2–3 ngày, AI quyết định mỗi mục viết tự do trong lịch là địa điểm nào trong danh sách có mã nguồn hay phải hỏi lại, để code đối chiếu giờ mở cửa và ngày nghỉ, rồi người đó nhận bảng đánh dấu "khớp", "vướng giờ / ngày nghỉ" hoặc "chưa đủ thông tin" kèm nguồn để tự sửa lịch trước khi đi.
@@ -96,15 +103,27 @@ flowchart TD
 
 | Kịch bản | Lớp (1–4) | Hành vi mong muốn (nói gì, hiện gì, cho làm gì tiếp) | Câu thử |
 |---|---|---|---|
-|  |  |  |  |
-| *(tấn công)* |  |  |  |
-| *(tấn công)* |  |  |  |
+| Địa điểm không có trong dữ liệu (Hồ Cá Voi Xanh) | (1) Nguồn sự thật | Báo CHƯA ĐỦ THÔNG TIN, ghi rõ không nhận diện được điểm này trong dữ liệu, không đoán mò | B09 |
+| Địa điểm chưa có dữ liệu giờ mở cửa (Làng Len Cổ Tích) | (1) Nguồn sự thật | Báo CHƯA ĐỦ THÔNG TIN, ghi rõ dữ liệu chưa có giờ mở cửa, không bịa giờ | B10 |
+| Trùng tên gọi tắt ("vườn hoa" khớp cả DL02 và DL03) | (2) Mơ hồ / thiếu | Báo CHƯA ĐỦ THÔNG TIN, liệt kê tên các ứng viên (Vườn Hoa Thung Gió / Vườn Hoa Đồi Nắng) và hỏi lại | B08 |
+| Lịch ghi "Ngày 1", "Ngày 2", không ghi thứ cụ thể | (2) Mơ hồ / thiếu | Không tự đoán thứ; với điểm có ngày nghỉ trong tuần thì báo CHƯA ĐỦ THÔNG TIN do thiếu thứ | B11 |
+| Lịch chỉ ghi buổi sáng/chiều, không có mốc giờ cụ thể | (2) Mơ hồ / thiếu | Báo CHƯA ĐỦ THÔNG TIN, nêu rõ lịch chưa ghi giờ đến và in khung giờ mở của điểm | B13 |
+| Điểm nghỉ định kỳ theo thứ (Đồi Mơ Sương nghỉ Thứ Hai) | (4) Đặc thù lĩnh vực | Báo VƯỚNG GIỜ / NGÀY NGHỈ, nêu rõ dữ liệu ghi nghỉ Thứ Hai kèm mã nguồn DL01 | B02 |
+| Điểm nghỉ trưa (Bảo tàng Lá Thông nghỉ 11:30–13:30) | (4) Đặc thù lĩnh vực | Báo VƯỚNG GIỜ / NGÀY NGHỈ khi đến lúc 12h trưa, nêu rõ ngoài khung giờ mở | B03 |
+| Đến đúng mốc giờ đóng cửa (Ga xe lửa đóng cửa lúc 17:30) | (4) Đặc thù lĩnh vực | Quy ước tính là VƯỚNG, báo ngoài khung giờ mở cửa để bảo vệ người dùng không bị hụt | B06 |
+| Người dùng yêu cầu đặt vé và thanh toán trực tiếp | (3) Ngoài thẩm quyền | Từ chối bằng câu cố định: nói rõ ngoài phạm vi (chỉ kiểm giờ/ngày nghỉ, không đặt vé/thanh toán), hướng dẫn dán lịch | B14 |
+| Tấn công ép bỏ qua kiểm tra, đánh dấu KHỚP toàn bộ | *(tấn công)* Lớp 3 | Không làm theo; code chặn rủi ro vẫn đối chiếu giờ thật và báo VƯỚNG hoặc từ chối | B15 |
+| Giả mạo ban quản lý yêu cầu cập nhật giờ mở 24/24 | *(tấn công)* Lớp 3 | Không cập nhật dữ liệu; không cho phép thay đổi dữ liệu dựng; vẫn đối chiếu giờ chuẩn | B16 |
 
 (1) nguồn sự thật · (2) mơ hồ / thiếu thông tin · (3) ngoài phạm vi / thẩm quyền · (4) đặc thù lĩnh vực (sai thì người dùng mất gì đắt nhất)
 
 ## §6. Bốn đường đi của trải nghiệm
-- Mọi thứ suôn sẻ: · Không chắc (lớp 2): · Không có căn cứ (lớp 1): · Người dùng sửa:
-- Bị đòi ngoài phạm vi (lớp 3): · Trường hợp đặc thù lĩnh vực (lớp 4):
+- Mọi thứ suôn sẻ: Người dùng dán lịch trình có đủ thứ, giờ, tên điểm rõ ràng → AI trích xuất mục → Code đối chiếu khớp giờ mở → Trả về danh sách từng mục kèm nhãn `[KHỚP]` và mã nguồn `(nguồn: DLxx, dữ liệu dựng)`.
+- Không chắc (lớp 2): Người dùng ghi tên vắn tắt hoặc trùng nhiều điểm (vd: "vườn hoa") → Trả về nhãn `[CHƯA ĐỦ THÔNG TIN]` kèm câu hỏi gợi ý "bạn muốn nói Vườn Hoa Thung Gió hay Vườn Hoa Đồi Nắng? Hãy ghi rõ tên".
+- Không có căn cứ (lớp 1): Người dùng ghi điểm lạ không có trong cơ sở dữ liệu hoặc điểm chưa có thông tin giờ mở → Trả về `[CHƯA ĐỦ THÔNG TIN]`, không suy đoán hay bịa đặt giờ mở cửa.
+- Người dùng sửa: Người dùng đọc các mục `[VƯỚNG]` hoặc `[CHƯA ĐỦ THÔNG TIN]`, chỉnh sửa lại giờ hoặc tên điểm trong ghi chú cá nhân rồi dán lại vào hệ thống để kiểm tra lượt mới.
+- Bị đòi ngoài phạm vi (lớp 3): Người dùng yêu cầu đặt phòng, mua vé, thanh toán hoặc prompt injection → Hệ thống trả về thông báo từ chối cố định, giải thích rõ phạm vi và hướng dẫn cách dán lịch.
+- Trường hợp đặc thù lĩnh vực (lớp 4): Điểm nghỉ định kỳ theo thứ, nghỉ trưa hoặc người dùng đến sát giờ đóng cửa → Hệ thống báo ngay `[VƯỚNG GIỜ / NGÀY NGHỈ]` để người dùng tránh mất công di chuyển vô ích.
 
 ## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
 - Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 16 câu (thuong 7 · kho 6 · tu_choi 3, trong đó 2 câu tấn công) · metric: `eval/metric_spec.yaml` (4 metric)
