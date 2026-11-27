@@ -4,16 +4,17 @@
 > Giữ nguyên tên file `TEAMS.md` ở thư mục gốc repo, giữ nguyên các dòng `- Tên nhóm:` … và tiêu đề cột của bảng. Chỉ thay chỗ `____`.
 > Kiểm bằng `python run.py check`: phần "Kiểm TEAMS.md" không báo gì là đúng format.
 
-- Tên nhóm: ____
-- Lớp: ____
-- Track: ____
-- Link repo: ____
+- Tên nhóm: Tứ Bất Tử
+- Lớp: L3A
+- Track: C
+- Link repo: https://github.com/bngcVu/K5-Day15-L3A-TuBatTu
 
 | STT | Họ và tên | Mã học viên | Vai trò | Phần việc chính |
 |---|---|---|---|---|
-| 1 | ____ | ____ | Đội trưởng | ____ |
-| 2 | ____ | ____ | Thành viên | ____ |
-| 3 | ____ | ____ | Thành viên | ____ |
+| 1 | Bùi Ngọc Vũ | 2A202603463 | Đội trưởng | Luồng `agent.py`, nối model, TEAMS / nộp bài |
+| 2 | Nguyễn Thế Trường | 2A202603393 | Thành viên | `tools.py`, dữ liệu địa điểm, data card |
+| 3 | Tô Minh Thành | 2A202603439 | Thành viên | Bộ câu thử, metric, chạy eval |
+| 4 | Nguyễn Thị Dung | 2A202603508 | Thành viên | Giả thuyết, phỏng vấn / khảo sát, tổng hợp bằng chứng |
 
 **Quy tắc điền**
 - **Lớp:** `L3A` hoặc `L3B`. **Track:** một chữ `A` (EdTech), `B` (Y tế), `C` (Du lịch), `D` (Thương mại điện tử), `E` (Tài chính) hoặc `F` (Làn khác). **Link repo:** link GitHub công khai của nhóm.
