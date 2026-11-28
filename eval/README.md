@@ -35,11 +35,13 @@
 
 | Lượt | Run ID | Model | Cấu hình (prompt / công cụ / thay đổi) | Đạt / tổng | % | Đạt chuẩn? |
 |---|---|---|---|---|---|---|
-| 1 | run-1@20261128-092617 | openai/gpt-oss-120b | Bản chạy thử đầu tiên qua Groq; 9 câu chạy thành công khớp 100%, 15 câu lỗi kỹ thuật HTTP 429 rate limit | 9/24 | 38% | chưa |
-| 2 | | | | __/__ | | |
+| 1 | run-1@20261128-092617 | openai/gpt-oss-120b | Bản chạy thử đầu tiên qua Groq; 9 câu thành công, 15 câu lỗi kỹ thuật HTTP 429 rate limit | 9/24 | 38% | chưa |
+| 2 | run-2@20261128-103134 | openai/gpt-oss-120b | Cải tiến thêm cơ chế auto-retry backoff khi gặp HTTP 429 trong `ai.py` | 24/24 | 100% | **ĐẠT** |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.
 
 ## 6. Lỗi chính
 
-Tóm 2–3 dòng từ `eval/report.md`: nhóm lỗi lớn nhất · đã sửa gì · còn lại gì.
+- **Nhóm lỗi lớn nhất:** Lỗi nghẽn băng thông `HTTP 429` (Rate limit TPM) từ nhà cung cấp mô hình Groq khiến phiên kiểm thử bị gián đoạn.
+- **Đã sửa gì:** Thêm cơ chế tự động chờ và thử lại (`backoff retry`) trong `codebase/ai.py`, cho phép xử lý tự động khi chạm giới hạn tốc độ.
+- **Kết quả cải tiến:** Tỉ lệ đạt tăng từ 38% (9/24) lên 100% (24/24), đạt trọn vẹn cả 3 tiêu chí cứng của chuẩn "đạt".

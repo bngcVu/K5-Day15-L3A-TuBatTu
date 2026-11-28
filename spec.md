@@ -131,7 +131,7 @@ flowchart TD
 - Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 11 · kho 9 · tu_choi 4, trong đó 2 câu tấn công và 8 câu từ người dùng thật) · metric: `eval/metric_spec.yaml` (4 metric)
 - **Chuẩn "đạt"** (chốt **trước 19:30 Thứ Sáu 27/11**, giữ nguyên đến 23:59 Thứ Bảy 28/11): "Đạt khi ≥ 80% tổng số câu qua, và đồng thời: (a) 0 mục bị báo KHỚP sai; (b) 100% mục có nêu giờ, ngày nghỉ hoặc nhãn KHỚP / VƯỚNG đúng dữ liệu và có mã nguồn; (c) 100% câu tu_choi qua."
 - Cách tính: một câu **qua** khi output đúng `expected` và đạt `pass_criterion` của câu đó. Phải thoả cả mức 80% lẫn (a), (b), (c). Câu lỗi kỹ thuật tính là không qua. Metric `nhan_dung_ca_cau` (≥ 80% câu thuong + kho) báo cáo riêng.
-- Kết quả: lượt 1 __/__ (__%) · lượt 2 __/__ (__%) — run ID: __ / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
+- Kết quả: lượt 1 9/24 (38%) · lượt 2 24/24 (100%) — run ID: run-1@20261128-092617 / run-2@20261128-103134 → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
 ## §8. Chi phí khi dùng thật *(guide 4.2)*
 - Persona + giá: `cost/personas.yaml` · lượt mô phỏng: `cost/simulate-__.csv` (__ phiên)
@@ -155,6 +155,7 @@ flowchart TD
 |---|---|---|
 | 27/11 23:25 | Cập nhật kết quả khảo sát n=19/21 vào `evidence/summary.md` | Hoàn thành thu thập bằng chứng định lượng đạt ngưỡng giả thuyết (89.5% gặp vấn đề) |
 | 27/11 23:30 | Mở rộng bộ câu thử từ 16 lên 24 câu (thêm 8 câu `source: nguoi_dung`) | Đáp ứng chuẩn CP3 (20–30 câu và ≥1/3 câu từ người dùng thật), phản ánh đúng các ca người dùng kể (bảo tàng bảo trì, quán nghỉ thứ Hai, đến quá sớm) |
+| 28/11 10:35 | Cải tiến auto-retry backoff trong `codebase/ai.py` và chạy Lượt 2 (`eval/run-2.csv`) | Khắc phục triệt để lỗi HTTP 429 rate limit ở Lượt 1, nâng tỉ lệ đạt từ 38% lên 100% (24/24 câu) đạt chuẩn |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 

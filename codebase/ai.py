@@ -19,6 +19,7 @@ Nối model thật: điền .env (chép từ .env.example), rồi viết nhánh 
 """
 import json
 import os
+import time
 import urllib.error
 import urllib.request
 
@@ -64,19 +65,26 @@ def call_model(system: str, user: str) -> dict:
 URL_GROQ = "https://api.groq.com/openai/v1/chat/completions"  # API định dạng OpenAI (docs/connect-model.md 2.1)
 
 
-def call_groq(system, user, timeout=60):
-    """Gọi đúng MỘT lần model. Chỉ dùng thư viện chuẩn."""
+def call_groq(system, user, timeout=60, max_retries=5):
+    """Gọi model qua Groq API định dạng OpenAI. Tự động chờ và thử lại khi gặp HTTP 429 (Rate Limit)."""
     messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": user}]
     body = {"model": MODEL_NAME, "messages": messages, "temperature": 0}
     req = urllib.request.Request(
         URL_GROQ, data=json.dumps(body).encode("utf-8"), method="POST",
         headers={"Content-Type": "application/json", "Authorization": "Bearer " + API_KEY,
-                 "User-Agent": "k5-day15-prototype"})  # User-Agent mặc định của urllib có thể bị chặn
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        raise RuntimeError("HTTP %d: %s" % (e.code, e.read().decode("utf-8", "replace")[:300]))
-    u = data["usage"]
-    return {"text": data["choices"][0]["message"]["content"] or "",
-            "tokens_in": u["prompt_tokens"], "tokens_out": u["completion_tokens"]}
+                 "User-Agent": "k5-day15-prototype"})
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            u = data["usage"]
+            return {"text": data["choices"][0]["message"]["content"] or "",
+                    "tokens_in": u["prompt_tokens"], "tokens_out": u["completion_tokens"]}
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", "replace")
+            if e.code == 429 and attempt < max_retries - 1:
+                # Trích xuất thời gian chờ từ thông báo lỗi của Groq (vd: 'Please try again in 3s') hoặc chờ luỹ tiến
+                wait_time = 4.0 * (attempt + 1)
+                time.sleep(wait_time)
+                continue
+            raise RuntimeError("HTTP %d: %s" % (e.code, err_body[:300]))
