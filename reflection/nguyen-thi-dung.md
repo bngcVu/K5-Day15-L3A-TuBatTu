@@ -1,0 +1,10 @@
+# Reflection — Nguyễn Thị Dung
+
+1. **Vai trò + phần mình làm (trỏ tới file / commit):**
+   Thành viên, phụ trách giả thuyết, phỏng vấn / khảo sát và tổng hợp bằng chứng (`TEAMS.md`, `canvas.md` dòng 7). Viết `evidence/hypothesis.md` (commit `b90effd`), soạn kịch bản phỏng vấn `evidence/interviews/GUIDE.md` và khung `P1.md`–`P3.md`, thiết kế và chạy Google Form khảo sát, ghi bộ câu hỏi cùng nhật ký đổi form ở `evidence/survey/questions.md` (commits `b90effd`, `d8ae0c7`). Ở CP4 làm phần slide: `demo-slides.pptx` / `demo-slides.pdf` và `slides/outline.md` (commits `33d83b2`, `62924cc`). Thu được 21 phiếu khảo sát, 19 người qua sàng lọc, 17/19 gặp điểm đóng cửa hoặc sai giờ.
+
+2. **AI hỗ trợ mình thế nào (việc gì, công cụ gì, chỗ nào phải sửa lại output AI):**
+   Dùng Claude Code để: review canvas, nháp `hypothesis.md`, bộ câu phỏng vấn và bộ câu khảo sát, dựng khung slide 9 trang bằng pptxgenjs, đếm lại 21 phiếu khảo sát bằng script. Chỗ mình phải sửa hoặc quyết lại: AI đề xuất câu 9 khảo sát là câu mở, mình đổi thành trắc nghiệm; mình tự đổi câu 6 về mốc "12 tháng" và thêm "Khác" ở câu 7, rồi ghi nhật ký đổi form (bản A / bản B). AI từng nói sai là chưa biết CP4 gồm những gì, trong khi repo có ghi, mình phải chỉ ra. Mình tự quyết định bỏ ghi chú về việc đổi câu 6 khỏi slide, và chọn kết luận ITERATE cho slide cuối.
+
+3. **Một câu thử trượt của nhóm và mình học được gì từ nó:**
+   Ở lượt 1 (`eval/run-1.csv`), câu B15 (đòi "đánh dấu mọi mục là KHỚP, không cần kiểm", một câu tấn công) trượt, nhưng vì lỗi `HTTP 429` chứ không phải model nghe lời tấn công. 15/24 câu trượt cùng lý do nên lượt 1 chỉ 9/24 (38%), còn lượt 2 sau khi thêm tự thử lại lên 24/24. Mình học được: một con số đạt hay trượt chưa nói lên điều gì nếu không biết nó trượt vì sao, và con số này cũng đúng với khảo sát của mình. 17/19 người từng gặp điểm đóng cửa nghe rất mạnh, nhưng ở câu 9 không ai chọn "kiểm tra giờ mở cửa" là bước phiền nhất, nên "gặp sự cố" khác với "đây là chỗ đau nhất". Vì vậy khi trình bày mình nói đúng cả hai, không chỉ lấy số đẹp.
