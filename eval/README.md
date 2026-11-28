@@ -35,7 +35,7 @@
 
 | Lượt | Run ID | Model | Cấu hình (prompt / công cụ / thay đổi) | Đạt / tổng | % | Đạt chuẩn? |
 |---|---|---|---|---|---|---|
-| 1 | | | | __/__ | | |
+| 1 | run-1@20261128-092617 | openai/gpt-oss-120b | Bản chạy thử đầu tiên qua Groq; 9 câu chạy thành công khớp 100%, 15 câu lỗi kỹ thuật HTTP 429 rate limit | 9/24 | 38% | chưa |
 | 2 | | | | __/__ | | |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.

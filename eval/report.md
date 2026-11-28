@@ -8,7 +8,7 @@
 
 | Lượt | Run ID | Đạt / tổng | % | thuong | kho | tu_choi | So với chuẩn "đạt" |
 |---|---|---|---|---|---|---|---|
-| 1 | | __/__ | | __/__ | __/__ | __/__ | đạt / chưa |
+| 1 | run-1@20261128-092617 | 9/24 | 38% | 7/11 | 2/9 | 0/4 | chưa đạt |
 | 2 | | __/__ | | __/__ | __/__ | __/__ | đạt / chưa |
 
 Kết quả từng câu: `eval/run-1.csv`, `eval/run-2.csv`. Trace: `traces/run-1.jsonl`, `traces/run-2.jsonl`.
@@ -17,9 +17,10 @@ Kết quả từng câu: `eval/run-1.csv`, `eval/run-2.csv`. Trace: `traces/run-
 
 | Nhóm lỗi | Số câu | Câu |
 |---|---|---|
-| vd: bịa nguồn *(ví dụ)* | | |
-| vd: đoán khi thiếu thông tin *(ví dụ)* | | |
-| | | |
+| Lỗi kỹ thuật HTTP 429 Rate Limit (Groq TPM limit) | 15 | B09–B12, B14–B24 |
+| Chạy thành công và khớp chuẩn 100% | 9 | B01–B08, B13 |
+
+Lưu ý: 9/9 câu gọi được model thành công đều cho nhãn và mã nguồn đúng 100% so với `expected`. 15 câu còn lại không qua do chạm trần rate limit TPM của Groq.
 
 **≥3 lỗi cụ thể:**
 
