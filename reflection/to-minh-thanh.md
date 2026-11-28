@@ -1,0 +1,11 @@
+# Reflection — Tô Minh Thành
+
+1. **Vai trò + phần mình làm (trỏ tới file / commit):**
+   Thành viên, phụ trách bộ câu thử, metric và chạy eval (`TEAMS.md`). Rà lại 16 câu thử B01–B16 trong `eval/benchmark.csv` mà coding agent viết nháp, đối chiếu `expected` với `data/diem_dalat.json` trước khi khoá chuẩn "đạt" ở CP2. Phỏng vấn 3 người tự lên lịch du lịch qua nhắn tin (`evidence/interviews/P1.md`–`P3.md`), ra số bằng chứng đầu tiên 2/3 và trích dẫn cho `canvas.md` dòng 4 (commit `a44a59a`). Gộp hai lần conflict khi pull (`21677f4`, `0a3be48`), chạy mô phỏng chi phí 50 phiên (`cost/simulate-1.csv`, commit `7d43857`) và hoàn thiện hồ sơ CP4 (`spec.md` §9, link video, commit `858b0f2`).
+
+2. **AI hỗ trợ mình thế nào (việc gì, công cụ gì, chỗ nào phải sửa lại output AI):**
+   Dùng Claude Code để: soát repo so với yêu cầu từng checkpoint, viết nháp `evidence/hypothesis.md`, chuyển ghi chép phỏng vấn thành `P1`–`P3.md` và `evidence/summary.md`, gộp conflict, soạn `spec.md` §9 từ nội dung §4–§5. Chỗ phải sửa hoặc kiểm lại: AI tự thêm ngưỡng khảo sát "≥40%" vào giả thuyết mà nhóm chưa chọn, phải bỏ đi; khi đếm bằng chứng, P1 không được tính là "gặp trong 12 tháng" vì chuyến gần nhất đã quá 12 tháng, nên số là 2/3 chứ không phải 3/3; câu trả lời của P1 là ghi tóm tắt nên không được để trong ngoặc kép như lời nguyên văn. Mình phải tự xác nhận các thông tin AI không biết (hình thức phỏng vấn, giờ hỏi, ai là người chấm thứ hai) thay vì để AI điền.
+   *[Thành tự bổ sung: chỗ nào trong 16 câu thử mình đã sửa hoặc thấy sai khi rà.]*
+
+3. **Một câu thử trượt của nhóm và mình học được gì từ nó:**
+   Ở lượt 1 (`eval/run-1.csv`), câu B14 — người dùng nhờ đặt 2 vé Show Đèn Hồ Sương và thanh toán — trượt, nhưng không phải vì model trả lời sai mà vì lỗi `HTTP 429` (Groq giới hạn tốc độ). 15/24 câu trượt cùng một lý do, nên lượt 1 chỉ đạt 9/24 (38%), và nhóm câu `tu_choi` ra 0/4. Mình học được: lỗi kỹ thuật vẫn tính là không qua, nên phải tách lỗi hạ tầng khỏi lỗi trả lời khi đọc kết quả, và nên chạy `eval --try` và `--wait` trước khi chạy cả bộ trên gói miễn phí. Lượt 2 chỉ thêm tự chờ và thử lại khi gặp 429 mà lên 24/24; điều đó cũng nhắc mình rằng bộ câu thử do chính nhóm (và AI) viết có thể còn dễ, cần thêm câu khó từ người dùng thật để con số 100% có ý nghĩa.

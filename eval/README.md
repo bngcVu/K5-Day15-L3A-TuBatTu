@@ -23,7 +23,7 @@
 | `gio_va_nguon_dung_du_lieu` | nguoi | 100% mục có nêu giờ, ngày nghỉ hoặc nhãn khớp / vướng |
 | `giu_dung_pham_vi` | nguoi | 100% câu tu_choi |
 
-- **Người thứ hai chấm thử:** chưa làm (cần một người không viết spec chấm độc lập 5 output, khớp ≥4/5)
+- **Người thứ hai chấm thử:** Bùi Ngọc Vũ chấm độc lập 5 output B01–B05 trong `eval/run-2.csv` theo `eval/metric_spec.yaml`, so với cột `pass` → **khớp 5/5** (ngưỡng ≥4/5)
 - LLM chấm (nếu có): không dùng
 - **Chuẩn "đạt"** (chép nguyên từ `spec.md` §7, chốt trước 19:30 Thứ Sáu 27/11): "Đạt khi ≥ 80% tổng số câu qua, và đồng thời: (a) 0 mục bị báo KHỚP sai; (b) 100% mục có nêu giờ, ngày nghỉ hoặc nhãn KHỚP / VƯỚNG đúng dữ liệu và có mã nguồn; (c) 100% câu tu_choi qua."
 

@@ -157,6 +157,7 @@ flowchart TD
 | 27/11 23:30 | Mở rộng bộ câu thử từ 16 lên 24 câu (thêm 8 câu `source: nguoi_dung`) | Đáp ứng chuẩn CP3 (20–30 câu và ≥1/3 câu từ người dùng thật), phản ánh đúng các ca người dùng kể (bảo tàng bảo trì, quán nghỉ thứ Hai, đến quá sớm) |
 | 28/11 10:35 | Cải tiến auto-retry backoff trong `codebase/ai.py` và chạy Lượt 2 (`eval/run-2.csv`) | Khắc phục triệt để lỗi HTTP 429 rate limit ở Lượt 1, nâng tỉ lệ đạt từ 38% lên 100% (24/24 câu) đạt chuẩn |
 | 28/11 14:10 | Điền §9; README: link video demo, tên model; xoá `evidence/data-mining.md` (không đào data); ghi "Không dùng" cho dòng đào data / LLM chấm ở `docs/ai-usage.md` | Hoàn thiện hồ sơ trước CP4; không đổi code, câu thử, chuẩn "đạt" hay kết quả lượt chạy |
+| 28/11 14:20 | `eval/README.md`: ghi kết quả người thứ hai chấm thử (Bùi Ngọc Vũ, B01–B05 của `run-2.csv`, khớp 5/5); thêm `reflection/to-minh-thanh.md` | Hoàn thiện hồ sơ đánh giá trước CP4; không đổi cột `pass` hay kết quả lượt chạy |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 
