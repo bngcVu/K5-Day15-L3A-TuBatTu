@@ -134,10 +134,10 @@ flowchart TD
 - Kết quả: lượt 1 9/24 (38%) · lượt 2 24/24 (100%) — run ID: run-1@20261128-092617 / run-2@20261128-103134 → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
 ## §8. Chi phí khi dùng thật *(guide 4.2)*
-- Persona + giá: `cost/personas.yaml` · lượt mô phỏng: `cost/simulate-__.csv` (__ phiên)
-- Chi phí / task thành công: __ (model __) · __ (model __)
-- Chi phí / tháng ở quy mô thật: thấp __ · cơ sở __ · cao __ → chi tiết `cost/cost-estimate.md`
-- So với impact / người / tháng (§2): đáng làm không, vì sao:
+- Persona + giá: `cost/personas.yaml` · lượt mô phỏng: `cost/simulate-1.csv` (50 phiên, tỉ lệ đạt lấy từ `eval/run-2.csv` = 24/24; token đo trên `openai/gpt-oss-120b`)
+- Chi phí / task thành công: $0.0015 ≈ 39 ₫ (model gemini-3.1-flash-lite) · $0.0079 ≈ 202 ₫ (model gemini-4-hydrogen)
+- Chi phí / tháng ở quy mô thật (flash-lite · hydrogen): thấp $3.07 · $16.07 — cơ sở $7.16 · $37.49 — cao $12.27 · $64.27 → chi tiết `cost/cost-estimate.md`
+- So với impact / người / tháng (§2): **đáng làm**. Chi phí ≈ 260–1.360 ₫ / người / tháng, trong khi mỗi người tiết kiệm ≈ 52,5 phút kiểm tra thủ công và tránh rủi ro mất 50.000–120.000 ₫ tiền xe.
 
 ## §9. Rủi ro & an toàn
 - Dữ liệu: đã ẩn danh gì, không thu gì, không đưa gì vào model gói miễn phí:
