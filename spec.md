@@ -140,9 +140,9 @@ flowchart TD
 - So với impact / người / tháng (§2): **đáng làm**. Chi phí ≈ 260–1.360 ₫ / người / tháng, trong khi mỗi người tiết kiệm ≈ 52,5 phút kiểm tra thủ công và tránh rủi ro mất 50.000–120.000 ₫ tiền xe.
 
 ## §9. Rủi ro & an toàn
-- Dữ liệu: đã ẩn danh gì, không thu gì, không đưa gì vào model gói miễn phí:
-- AI **không được** làm gì kể cả khi người dùng yêu cầu:
-- Ai có thể bị hại nếu AI sai, và nhóm chặn thế nào:
+- Dữ liệu: đã ẩn danh gì, không thu gì, không đưa gì vào model gói miễn phí: phỏng vấn chỉ ghi P1–P3 + vai, bỏ tên; khảo sát (`evidence/survey/results.csv`) không thu tên, email, SĐT. Model (Groq, gói miễn phí) chỉ nhận lịch nháp người dùng dán và danh sách mã / tên địa điểm dựng — không nhận giờ mở cửa, không nhận dữ liệu cá nhân. Đầu vào của các lượt eval / mô phỏng là câu thử, không phải lịch thật có tên người. Người dùng thật không nên dán tên, SĐT vào lịch.
+- AI **không được** làm gì kể cả khi người dùng yêu cầu: đặt vé, đặt chỗ, thanh toán; sửa hay cập nhật dữ liệu giờ mở cửa (kể cả khi người dùng tự xưng là quản lý — B16); bỏ qua bước kiểm giờ hoặc tự gắn nhãn KHỚP (B15); tự sửa / xếp lại lịch thay người dùng; tự chọn giữa hai địa điểm trùng tên gọi (B08). Công cụ `tra_diem`, `kiem_gio` chỉ đọc, không có quyền ghi.
+- Ai có thể bị hại nếu AI sai, và nhóm chặn thế nào: người đi và cả nhóm bạn đi cùng — báo KHỚP sai thì tới nơi gặp điểm đóng cửa, mất 30–40 phút, 50.000–120.000đ tiền xe và phải cắt điểm (P2, P3 trong `evidence/interviews/`). Chặn: model không thấy giờ mở và không quyết định nhãn; nhãn KHỚP / VƯỚNG chỉ ra từ `kiem_gio` (code); trích dẫn, mã, thứ do model trả đều được code kiểm lại; tên mơ hồ ép hỏi lại; thiếu dữ liệu thì báo CHƯA ĐỦ THÔNG TIN; output ghi rõ dữ liệu là dựng và chỉ là gợi ý. Rủi ro còn lại: giờ mở cửa đã cũ hoặc đóng cửa đột xuất (bảo trì — P2) mà nguồn không cập nhật; bản chạy thử không bắt được, người dùng vẫn nên tự kiểm lại với điểm đến.
 
 ## §10. Phân công & changelog
 - Phân công có tên (theo chặng, chia cặp): Bùi Ngọc Vũ (Đội trưởng - Agent/Prompt/Chạy Eval); Nguyễn Thế Trường (Công cụ tools.py / Data địa điểm / Data Card); Tô Minh Thành (Bộ câu thử Benchmark / Metric); Nguyễn Thị Dung (Bằng chứng Pain / Phỏng vấn & Khảo sát).
@@ -156,6 +156,7 @@ flowchart TD
 | 27/11 23:25 | Cập nhật kết quả khảo sát n=19/21 vào `evidence/summary.md` | Hoàn thành thu thập bằng chứng định lượng đạt ngưỡng giả thuyết (89.5% gặp vấn đề) |
 | 27/11 23:30 | Mở rộng bộ câu thử từ 16 lên 24 câu (thêm 8 câu `source: nguoi_dung`) | Đáp ứng chuẩn CP3 (20–30 câu và ≥1/3 câu từ người dùng thật), phản ánh đúng các ca người dùng kể (bảo tàng bảo trì, quán nghỉ thứ Hai, đến quá sớm) |
 | 28/11 10:35 | Cải tiến auto-retry backoff trong `codebase/ai.py` và chạy Lượt 2 (`eval/run-2.csv`) | Khắc phục triệt để lỗi HTTP 429 rate limit ở Lượt 1, nâng tỉ lệ đạt từ 38% lên 100% (24/24 câu) đạt chuẩn |
+| 28/11 14:10 | Điền §9; README: link video demo, tên model; xoá `evidence/data-mining.md` (không đào data); ghi "Không dùng" cho dòng đào data / LLM chấm ở `docs/ai-usage.md` | Hoàn thiện hồ sơ trước CP4; không đổi code, câu thử, chuẩn "đạt" hay kết quả lượt chạy |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 

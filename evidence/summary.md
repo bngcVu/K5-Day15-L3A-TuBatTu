@@ -7,7 +7,7 @@
 
 | Nguồn | Đạt ngưỡng? | File |
 |---|---|---|
-| Đào data (x/N, %, cách đếm chạy lại được, ≥5 ví dụ) | ☐ | `evidence/data-mining.md` |
+| Đào data (x/N, %, cách đếm chạy lại được, ≥5 ví dụ) | Không dùng | — |
 | Phỏng vấn (≥3 người ngoài nhóm, đúng người dùng) | ☑ Đạt — 3 người ngoài nhóm, đều tự lên lịch (P1–P3) | `evidence/interviews/P1.md`, `P2.md`, `P3.md` |
 | Khảo sát (≥20 người ngoài nhóm, đúng người dùng) | ☑ Đạt — n = 19 người qua sàng lọc / 21 phản hồi ngoài nhóm | `evidence/survey/results.csv` |
 

@@ -81,7 +81,7 @@ Nhóm dùng stack khác (Node, Streamlit, notebook…): sửa hàm `run_app()` t
 
 | Thành phần | Thật / Giả | Ghi chú |
 |---|---|---|
-| Lời gọi AI ở quyết định trung tâm (nhận diện từng mục trong lịch là địa điểm nào, hay phải hỏi lại) | **Thật** (đã nối, chưa chạy lượt eval nào) | Model: qua Groq (`call_groq` trong `codebase/ai.py`) · tên model: ____ (ghi khi chạy lượt 1). Khi `MODEL_PROVIDER=fake`, bước này thay bằng quy tắc khớp tên |
+| Lời gọi AI ở quyết định trung tâm (nhận diện từng mục trong lịch là địa điểm nào, hay phải hỏi lại) | **Thật** (đã chạy 2 lượt eval: lượt 1 9/24, lượt 2 24/24) | Model: `openai/gpt-oss-120b` qua Groq (`call_groq` trong `codebase/ai.py`). Khi `MODEL_PROVIDER=fake`, bước này thay bằng quy tắc khớp tên |
 | Dữ liệu địa điểm `data/diem_dalat.json` | **Giả** (dựng) | 12 địa điểm, tên và giờ đều dựng, không phải thông tin du lịch thật — xem `data/DATA_CARD.md` |
 | Công cụ `tra_diem`, `kiem_gio` | **Thật** (code) | So giờ mở cửa / ngày nghỉ bằng code trên dữ liệu dựng; model không thấy giờ và không quyết định nhãn |
 | Đặt vé, đặt chỗ, sửa lịch | **Không làm** | Ngoài phạm vi lát cắt; người dùng tự sửa lịch |
@@ -122,5 +122,5 @@ Nhóm dùng **Claude Code** để viết nháp code bản chạy thử (`agent.p
 | 4 | Bản chạy thử làm trọn lát cắt | `codebase/` · lệnh ở mục "Lệnh" |
 | 5 | Định nghĩa "tốt" + bộ câu thử | `data/DATA_CARD.md` · `eval/` |
 | 6 | Mô phỏng chi phí khi dùng thật | `cost/` |
-| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` ở thư mục gốc · link video: ____ |
+| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` ở thư mục gốc · link video: https://drive.google.com/drive/folders/1C2HQ295hdIR52of-iZGTLHKzB_TWj_KK |
 | + | *Bonus:* người dùng thử | `validation/log.md` |
